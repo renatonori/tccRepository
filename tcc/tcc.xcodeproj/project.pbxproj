@@ -15,6 +15,8 @@
 		A9080CB51B2A1487002DD48B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9080CB41B2A1487002DD48B /* Images.xcassets */; };
 		A9080CB81B2A1487002DD48B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9080CB61B2A1487002DD48B /* LaunchScreen.xib */; };
 		A9080CC41B2A1487002DD48B /* tccTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9080CC31B2A1487002DD48B /* tccTests.m */; };
+		A9080CD01B2A1C01002DD48B /* AtualizadorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9080CCF1B2A1C01002DD48B /* AtualizadorViewController.m */; };
+		A9080CD71B2A1DA7002DD48B /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9080CD61B2A1DA7002DD48B /* SearchTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		A9080CBD1B2A1487002DD48B /* tccTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tccTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9080CC21B2A1487002DD48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9080CC31B2A1487002DD48B /* tccTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tccTests.m; sourceTree = "<group>"; };
+		A9080CCE1B2A1C01002DD48B /* AtualizadorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtualizadorViewController.h; sourceTree = "<group>"; };
+		A9080CCF1B2A1C01002DD48B /* AtualizadorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtualizadorViewController.m; sourceTree = "<group>"; };
+		A9080CD51B2A1DA7002DD48B /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		A9080CD61B2A1DA7002DD48B /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 		A9080CA31B2A1487002DD48B /* tcc */ = {
 			isa = PBXGroup;
 			children = (
+				A9080CD11B2A1D39002DD48B /* Procurar */,
+				A9080CCD1B2A1BDB002DD48B /* Atualizar Core Data */,
 				A9080CA81B2A1487002DD48B /* AppDelegate.h */,
 				A9080CA91B2A1487002DD48B /* AppDelegate.m */,
 				A9080CAE1B2A1487002DD48B /* ViewController.h */,
@@ -120,6 +128,24 @@
 				A9080CC21B2A1487002DD48B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9080CCD1B2A1BDB002DD48B /* Atualizar Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				A9080CCE1B2A1C01002DD48B /* AtualizadorViewController.h */,
+				A9080CCF1B2A1C01002DD48B /* AtualizadorViewController.m */,
+			);
+			name = "Atualizar Core Data";
+			sourceTree = "<group>";
+		};
+		A9080CD11B2A1D39002DD48B /* Procurar */ = {
+			isa = PBXGroup;
+			children = (
+				A9080CD51B2A1DA7002DD48B /* SearchTableViewController.h */,
+				A9080CD61B2A1DA7002DD48B /* SearchTableViewController.m */,
+			);
+			name = Procurar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +197,7 @@
 				TargetAttributes = {
 					A9080CA01B2A1487002DD48B = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9E6QYWRYMF;
 					};
 					A9080CBC1B2A1487002DD48B = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -224,6 +251,8 @@
 			files = (
 				A9080CAD1B2A1487002DD48B /* tcc.xcdatamodeld in Sources */,
 				A9080CAA1B2A1487002DD48B /* AppDelegate.m in Sources */,
+				A9080CD01B2A1C01002DD48B /* AtualizadorViewController.m in Sources */,
+				A9080CD71B2A1DA7002DD48B /* SearchTableViewController.m in Sources */,
 				A9080CB01B2A1487002DD48B /* ViewController.m in Sources */,
 				A9080CA71B2A1487002DD48B /* main.m in Sources */,
 			);
@@ -351,7 +380,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = tcc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -361,7 +392,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = tcc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
