@@ -1,23 +1,22 @@
 //
-//  AtualizadorViewController.m
+//  LoginViewController.m
 //  tcc
 //
-//  Created by Renato Ioshida on 11/06/15.
+//  Created by Renato Ioshida on 12/06/15.
 //  Copyright (c) 2015 Renato Ioshida. All rights reserved.
 //
 
-#import "AtualizadorViewController.h"
+#import "LoginViewController.h"
 
-@interface AtualizadorViewController ()
+@interface LoginViewController ()
 
 @end
 
-@implementation AtualizadorViewController
+@implementation LoginViewController
 
 - (void)viewDidLoad {
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     [super viewDidLoad];
-    //[self.navigationItem setHidesBackButton:YES animated:NO];
-    
     // Do any additional setup after loading the view.
 }
 
@@ -25,10 +24,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)viewWillDisappear:(BOOL)animated{
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-    [super viewWillDisappear:animated];
-}
+
 /*
 #pragma mark - Navigation
 
