@@ -133,7 +133,7 @@
         <scene sceneID="Kvr-MK-FbL">
             <objects>
                 <tableViewController title="Culturas" id="IVB-Hj-E3r" customClass="SearchTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" id="IPh-su-nNZ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IPh-su-nNZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -143,21 +143,21 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cultureCell" rowHeight="64" id="1uj-RW-l6w">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cultureCell" rowHeight="44" id="1uj-RW-l6w">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1uj-RW-l6w" id="794-EJ-jN7">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milho" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7n0-sm-LbM">
-                                            <rect key="frame" x="166" y="21" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soja" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7n0-sm-LbM">
+                                            <rect key="frame" x="8" y="11" width="34" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="centerX" secondItem="7n0-sm-LbM" secondAttribute="centerX" constant="0.5" id="x0L-n9-ucS"/>
-                                        <constraint firstAttribute="centerY" secondItem="7n0-sm-LbM" secondAttribute="centerY" id="xLX-qi-KJr"/>
+                                        <constraint firstAttribute="centerY" secondItem="7n0-sm-LbM" secondAttribute="centerY" id="kg2-CG-usm"/>
+                                        <constraint firstItem="7n0-sm-LbM" firstAttribute="leading" secondItem="794-EJ-jN7" secondAttribute="leadingMargin" id="xN1-9v-Mwz"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
