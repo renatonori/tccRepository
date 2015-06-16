@@ -109,7 +109,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="IVB-Hj-E3r" kind="show" id="EQe-0g-qAd"/>
+                                    <segue destination="1Yv-es-LU8" kind="show" id="Tp9-Hf-Os7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -129,51 +129,69 @@
             </objects>
             <point key="canvasLocation" x="1665.5" y="428.5"/>
         </scene>
-        <!--Culturas-->
-        <scene sceneID="Kvr-MK-FbL">
+        <!--Search View Controller-->
+        <scene sceneID="iC6-5B-8Vb">
             <objects>
-                <tableViewController title="Culturas" id="IVB-Hj-E3r" customClass="SearchTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IPh-su-nNZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                <viewController id="1Yv-es-LU8" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7G7-uq-AKq"/>
+                        <viewControllerLayoutGuide type="bottom" id="yep-5v-Ykp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Xy-fT-VcB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="bwb-WI-NIx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="51" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9dc-ly-F1X">
+                                <rect key="frame" x="0.0" y="44" width="414" height="628"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cultureCell" rowHeight="51" id="Mti-wI-rz9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mti-wI-rz9" id="GNC-iW-hXG">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soja" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iga-JW-rhz">
+                                                    <rect key="frame" x="8" y="14" width="34" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Iga-JW-rhz" firstAttribute="leading" secondItem="GNC-iW-hXG" secondAttribute="leadingMargin" id="AYf-vc-srQ"/>
+                                                <constraint firstAttribute="centerY" secondItem="Iga-JW-rhz" secondAttribute="centerY" constant="0.5" id="kMX-Ew-mXD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" id="yIv-pE-2Pu">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cultureCell" rowHeight="44" id="1uj-RW-l6w">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1uj-RW-l6w" id="794-EJ-jN7">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soja" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7n0-sm-LbM">
-                                            <rect key="frame" x="8" y="11" width="34" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="7n0-sm-LbM" secondAttribute="centerY" id="kg2-CG-usm"/>
-                                        <constraint firstItem="7n0-sm-LbM" firstAttribute="leading" secondItem="794-EJ-jN7" secondAttribute="leadingMargin" id="xN1-9v-Mwz"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="IVB-Hj-E3r" id="Lxw-JU-aft"/>
-                            <outlet property="delegate" destination="IVB-Hj-E3r" id="2Il-RJ-8Z6"/>
-                        </connections>
-                    </tableView>
+                        <constraints>
+                            <constraint firstItem="bwb-WI-NIx" firstAttribute="top" secondItem="7G7-uq-AKq" secondAttribute="bottom" id="Bdl-18-sBZ"/>
+                            <constraint firstItem="yep-5v-Ykp" firstAttribute="top" secondItem="9dc-ly-F1X" secondAttribute="bottom" id="Epl-rS-uUx"/>
+                            <constraint firstItem="9dc-ly-F1X" firstAttribute="leading" secondItem="7Xy-fT-VcB" secondAttribute="leadingMargin" constant="-16" id="Oz0-gN-yWZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bwb-WI-NIx" secondAttribute="trailing" constant="-16" id="Rgv-fP-iLv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9dc-ly-F1X" secondAttribute="trailing" constant="-16" id="Vj3-ww-9t4"/>
+                            <constraint firstItem="bwb-WI-NIx" firstAttribute="leading" secondItem="7Xy-fT-VcB" secondAttribute="leadingMargin" constant="-16" id="bJG-Uz-5Md"/>
+                            <constraint firstItem="9dc-ly-F1X" firstAttribute="top" secondItem="bwb-WI-NIx" secondAttribute="bottom" id="irr-Rp-pnf"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <segue destination="X7j-Gf-iTe" kind="show" identifier="cellSegue" id="qyX-My-JOr"/>
+                        <outlet property="searchBar" destination="bwb-WI-NIx" id="2Gs-nf-LPP"/>
+                        <outlet property="tableView" destination="9dc-ly-F1X" id="Tcw-Pe-CeW"/>
+                        <segue destination="X7j-Gf-iTe" kind="show" identifier="cellSegue" id="5dt-16-gHb"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P0Q-xq-S5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfv-ZZ-OyY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2338.5" y="428.5"/>
+            <point key="canvasLocation" x="2307" y="453"/>
         </scene>
         <!--Info Cultura View Controller-->
         <scene sceneID="u9V-X2-FwL">
@@ -184,7 +202,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Zbu-R4-fGl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8x2-fT-klO">
-                        <rect key="frame" x="0.0" y="64" width="375" height="620"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vb6-CJ-mYT">
@@ -207,14 +225,14 @@
                                     <constraint firstAttribute="height" constant="44" id="gej-0i-DVE"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1c0-W5-hHJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1c0-W5-hHJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                 <color key="backgroundColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="xur-X6-NaO"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThK-Tf-V41">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThK-Tf-V41">
                                 <rect key="frame" x="0.0" y="199" width="375" height="375"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKP-89-5W7">
@@ -304,8 +322,8 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="143" id="iI1-pE-5o9"/>
                                         </constraints>
-                                        <mutableString key="text">A indústria nacional transforma, por ano, cerca de 30,7 milhões de toneladas de soja, produzindo 5,8 milhões de toneladas de óleo comestível e 23,5 milhões de toneladas de farelo protéico, contribuindo para a competitividade nacional na produção de carnes, ovos e leite. Além disso, a soja e o farelo de soja brasileiros possuem alto teor de proteína e padrão de qualidade Premium, o que permite sua entrada em mercados extremamente exigentes como os da União Europeia e do Japão.
-A soja também se constitui em alternativa para a fabricação do biodiesel, combustível capaz de reduzir em 78% a emissão dos gases causadores do efeito estufa na atmosfera. </mutableString>
+                                        <string key="text">A indústria nacional transforma, por ano, cerca de 30,7 milhões de toneladas de soja, produzindo 5,8 milhões de toneladas de óleo comestível e 23,5 milhões de toneladas de farelo protéico, contribuindo para a competitividade nacional na produção de carnes, ovos e leite. Além disso, a soja e o farelo de soja brasileiros possuem alto teor de proteína e padrão de qualidade Premium, o que permite sua entrada em mercados extremamente exigentes como os da União Europeia e do Japão.
+A soja também se constitui em alternativa para a fabricação do biodiesel, combustível capaz de reduzir em 78% a emissão dos gases causadores do efeito estufa na atmosfera. </string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -340,10 +358,10 @@ A soja também se constitui em alternativa para a fabricação do biodiesel, com
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="1c0-W5-hHJ" secondAttribute="trailing" id="42U-wM-cMG"/>
-                            <constraint firstItem="vb6-CJ-mYT" firstAttribute="top" secondItem="ThK-Tf-V41" secondAttribute="bottom" constant="2" id="8qy-1W-eZp"/>
+                            <constraint firstItem="vb6-CJ-mYT" firstAttribute="top" secondItem="ThK-Tf-V41" secondAttribute="bottom" constant="66" id="8qy-1W-eZp"/>
                             <constraint firstItem="1c0-W5-hHJ" firstAttribute="top" secondItem="8x2-fT-klO" secondAttribute="top" id="8xs-Hr-kES"/>
                             <constraint firstItem="1c0-W5-hHJ" firstAttribute="leading" secondItem="8x2-fT-klO" secondAttribute="leading" id="LyC-aR-hyF"/>
-                            <constraint firstItem="1c0-W5-hHJ" firstAttribute="top" secondItem="eOI-k9-dqy" secondAttribute="bottom" id="SrV-hU-7MC"/>
+                            <constraint firstItem="1c0-W5-hHJ" firstAttribute="top" secondItem="eOI-k9-dqy" secondAttribute="bottom" constant="-20" id="SrV-hU-7MC"/>
                             <constraint firstItem="ThK-Tf-V41" firstAttribute="top" secondItem="1c0-W5-hHJ" secondAttribute="bottom" constant="-1" id="Vgl-st-UVp"/>
                             <constraint firstItem="ThK-Tf-V41" firstAttribute="leading" secondItem="8x2-fT-klO" secondAttribute="leading" id="WHh-X3-9fs"/>
                             <constraint firstItem="vb6-CJ-mYT" firstAttribute="leading" secondItem="8x2-fT-klO" secondAttribute="leading" id="XnQ-PQ-gv1"/>

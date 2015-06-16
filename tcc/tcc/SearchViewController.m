@@ -1,22 +1,23 @@
 //
-//  SearchTableViewController.m
+//  SearchViewController.m
 //  tcc
 //
 //  Created by Renato Ioshida on 11/06/15.
 //  Copyright (c) 2015 Renato Ioshida. All rights reserved.
 //
 
-#import "SearchTableViewController.h"
+#import "SearchViewController.h"
 
-@interface SearchTableViewController ()
+@interface SearchViewController ()
 
 @end
 
-@implementation SearchTableViewController
+@implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationItem setHidesBackButton:YES animated:NO];
+
     self.tableView.delegate =self;
     self.tableView.dataSource = self;
     // Uncomment the following line to preserve selection between presentations.

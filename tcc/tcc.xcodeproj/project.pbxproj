@@ -16,7 +16,7 @@
 		A9080CB81B2A1487002DD48B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9080CB61B2A1487002DD48B /* LaunchScreen.xib */; };
 		A9080CC41B2A1487002DD48B /* tccTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9080CC31B2A1487002DD48B /* tccTests.m */; };
 		A9080CD01B2A1C01002DD48B /* AtualizadorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9080CCF1B2A1C01002DD48B /* AtualizadorViewController.m */; };
-		A9080CD71B2A1DA7002DD48B /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9080CD61B2A1DA7002DD48B /* SearchTableViewController.m */; };
+		A9080CD71B2A1DA7002DD48B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9080CD61B2A1DA7002DD48B /* SearchViewController.m */; };
 		A926D1A21B2B5C260024962E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A926D1A11B2B5C260024962E /* MapKit.framework */; };
 		A926D1A61B2B5D7E0024962E /* InfoCulturaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A926D1A51B2B5D7E0024962E /* InfoCulturaViewController.m */; };
 		A926D1AD1B2B6D960024962E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A926D1AC1B2B6D960024962E /* LoginViewController.m */; };
@@ -53,8 +53,8 @@
 		A9080CC31B2A1487002DD48B /* tccTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tccTests.m; sourceTree = "<group>"; };
 		A9080CCE1B2A1C01002DD48B /* AtualizadorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtualizadorViewController.h; sourceTree = "<group>"; };
 		A9080CCF1B2A1C01002DD48B /* AtualizadorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtualizadorViewController.m; sourceTree = "<group>"; };
-		A9080CD51B2A1DA7002DD48B /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
-		A9080CD61B2A1DA7002DD48B /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		A9080CD51B2A1DA7002DD48B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		A9080CD61B2A1DA7002DD48B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		A926D1A11B2B5C260024962E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A926D1A41B2B5D7E0024962E /* InfoCulturaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCulturaViewController.h; sourceTree = "<group>"; };
 		A926D1A51B2B5D7E0024962E /* InfoCulturaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCulturaViewController.m; sourceTree = "<group>"; };
@@ -88,7 +88,6 @@
 		A9080C981B2A1486002DD48B = {
 			isa = PBXGroup;
 			children = (
-				A926D1A11B2B5C260024962E /* MapKit.framework */,
 				A9080CA31B2A1487002DD48B /* tcc */,
 				A9080CC01B2A1487002DD48B /* tccTests */,
 				A9080CA21B2A1487002DD48B /* Products */,
@@ -165,8 +164,8 @@
 		A9080CD11B2A1D39002DD48B /* Procurar */ = {
 			isa = PBXGroup;
 			children = (
-				A9080CD51B2A1DA7002DD48B /* SearchTableViewController.h */,
-				A9080CD61B2A1DA7002DD48B /* SearchTableViewController.m */,
+				A9080CD51B2A1DA7002DD48B /* SearchViewController.h */,
+				A9080CD61B2A1DA7002DD48B /* SearchViewController.m */,
 			);
 			name = Procurar;
 			sourceTree = "<group>";
@@ -201,6 +200,7 @@
 		E0A5023BAEA2EA8FF506F1A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A926D1A11B2B5C260024962E /* MapKit.framework */,
 				9AF486B7C90A766032F7209D /* libPods.a */,
 			);
 			name = Frameworks;
@@ -357,7 +357,7 @@
 				A926D1B11B2B77D80024962E /* MapViewController.m in Sources */,
 				A9080CAA1B2A1487002DD48B /* AppDelegate.m in Sources */,
 				A9080CD01B2A1C01002DD48B /* AtualizadorViewController.m in Sources */,
-				A9080CD71B2A1DA7002DD48B /* SearchTableViewController.m in Sources */,
+				A9080CD71B2A1DA7002DD48B /* SearchViewController.m in Sources */,
 				A9080CB01B2A1487002DD48B /* ViewController.m in Sources */,
 				A9080CA71B2A1487002DD48B /* main.m in Sources */,
 			);
