@@ -48,10 +48,6 @@ platform :ios do
 		output_dir:'coverage_reports'
 	) 
 
-  xctest(
-    destination: "name=iPhone 6,OS=9.0"
-  )
-
 gcovr(
   html: true,
   html_details: true,
