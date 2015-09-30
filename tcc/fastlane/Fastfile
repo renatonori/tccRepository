@@ -47,6 +47,17 @@ platform :ios do
 		scheme: 'tcc',
 		output_dir:'coverage_reports'
 	) 
+
+  xctest(
+    destination: "name=iPhone 6,OS=9.0"
+  )
+
+gcovr(
+  html: true,
+  html_details: true,
+  output: "./coverage_reports/report.html"
+)
+
   end
 
   desc "Runs all the tests"
