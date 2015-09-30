@@ -42,12 +42,6 @@ platform :ios do
 		'GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=TES'
 	].join(' ')
 
-	lcov(
-		project_name: 'tcc',
-		scheme: 'tcc',
-		output_dir:'coverage_reports'
-	) 
-
 gcovr(
   html: true,
   html_details: true,
