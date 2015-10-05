@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.imagemCulturaImageView setImageWithURL:[NSURL URLWithString:@"http://revistaagrosa.com.br/site/wp-content/uploads/2015/05/SOJA.jpg"] placeholderImage:nl];
+    [self.imagemCulturaImageView setImageWithURL:[NSURL URLWithString:@"http://revistaagrosa.com.br/site/wp-content/uploads/2015/05/SOJA.jpg"] placeholderImage:nil];
     // Do any additional setup after loading the view.
 }
 
