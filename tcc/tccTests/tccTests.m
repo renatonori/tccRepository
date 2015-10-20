@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-
+extern void __gcov_flush();
 @interface tccTests : XCTestCase
 
 @end
@@ -22,6 +22,7 @@
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
+    __gcov_flush();
     [super tearDown];
 }
 
